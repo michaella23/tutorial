@@ -80,6 +80,11 @@ li {
     outline-color: #9e055e;
 }
 
+.dark .nav-links a:hover,
+.dark .nav-links a:focus {
+    background-color: #9e055e;
+}
+
 .nav-links a:active {
     color: #9e055e;
 }
@@ -97,6 +102,16 @@ li {
     color: #fff;
     padding: 0.75rem 1.25rem;
     font-size: 1.1rem;
+    border: none;
+}
+
+.greeting-btn:focus,
+.greeting-btn:hover {
+    background-color: #9e055e;
+}
+
+.greeting-btn:active {
+    transform: scale(0.9);
 }
   
 @media screen and (min-width: 636px) {
