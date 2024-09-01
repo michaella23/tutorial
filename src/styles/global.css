@@ -79,12 +79,24 @@ li {
     background-color: #f1bce9;
     outline-color: #9e055e;
 }
+
+.nav-links a:active {
+    color: #9e055e;
+}
   
 .expanded {
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 85vw
+}
+
+.greeting-btn {
+    cursor: pointer;
+    background-color: #4c1d95;
+    color: #fff;
+    padding: 0.75rem 1.25rem;
+    font-size: 1.1rem;
 }
   
 @media screen and (min-width: 636px) {
