@@ -1,3 +1,7 @@
+* {
+    box-sizing: border-box;
+ }
+
 html {
     background-color: #f1f5f9;
     font-family: sans-serif;
@@ -6,14 +10,19 @@ html {
 body {
     margin: 0 auto;
     width: 100%;
-    max-width: 80ch;
-    padding: 1rem;
+    /* max-width: 80ch; */
+    padding: 1em;
     line-height: 1.5;
 }
 
-* {
-    box-sizing: border-box;
- }
+
+header {
+    width: 100vw;
+    border: 1px solid #9e055e;
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+}
 
 h1 {
     margin: 1rem 0;
@@ -31,7 +40,8 @@ html.dark {
 
   /* nav styles */
 .hamburger {
-    padding-right: 20px;
+    border: none;
+    background-color: transparent;
     cursor: pointer;
 }
   
@@ -40,35 +50,41 @@ html.dark {
     width: 40px;
     height: 5px;
     margin-bottom: 10px;
-    background-color: #ff9776;
+    background-color: #9e055e;
 }
 
 .nav-links {
     width: 100%;
     top: 5rem;
-    left: 48px;
-    background-color: #ff9776;
     display: none;
     margin: 0;
+}
+
+li {
+    list-style-type: none;
+    padding: 0;
 }
   
 .nav-links a {
     display: block;
-    text-align: center;
     padding: 10px 0;
     text-decoration: none;
     font-size: 1.2rem;
     font-weight: bold;
-    text-transform: uppercase;
+    text-transform: uppercase;  
 }
   
 .nav-links a:hover,
 .nav-links a:focus {
-    background-color: #ff9776;
+    background-color: #f1bce9;
+    outline-color: #9e055e;
 }
   
 .expanded {
-    display: unset;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
   
 @media screen and (min-width: 636px) {
