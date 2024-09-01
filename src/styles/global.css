@@ -38,6 +38,10 @@ html.dark {
     color: #fff;
 }
 
+.dark .blog-link:focus,
+.dark .blog-link:hover {
+    color: #f1bce9;
+}
 
   /* nav styles */
 .hamburger {
@@ -96,6 +100,8 @@ li {
     width: 85vw
 }
 
+/* greeting styles */
+
 .greeting-btn {
     cursor: pointer;
     background-color: #4c1d95;
@@ -112,6 +118,13 @@ li {
 
 .greeting-btn:active {
     transform: scale(0.9);
+}
+
+/* blog page styles */
+.blog-link {
+    display: block;
+    padding: 0.5rem 0;
+    max-width: max-content;
 }
   
 @media screen and (min-width: 636px) {
